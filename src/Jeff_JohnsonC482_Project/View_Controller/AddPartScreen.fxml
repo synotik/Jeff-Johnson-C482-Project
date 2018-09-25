@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="addPartAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jeff_JohnsonC482_Project.View_Controller.AddPartScreenController">
+   <children>
+      <VBox fx:id="addPartLabelVbox" alignment="CENTER_LEFT" layoutX="170.0" layoutY="81.0" spacing="20.0">
+         <children>
+            <Label fx:id="addPartIdLabel" text="ID" />
+            <Label fx:id="addPartNameLabel" text="Name" />
+            <Label fx:id="addPartInvLabel" text="Inv" />
+            <Label fx:id="addPartPriceCostLabel" text="Price/Cost" />
+            <Label fx:id="addPartMinLabel" text="Min" />
+            <Label fx:id="addPartMaxLabel" text="Max" />
+            <Label fx:id="addPartChangingLabel" text="Machine ID" />
+         </children>
+      </VBox>
+      <VBox fx:id="addPartTextBoxVbox" alignment="CENTER_LEFT" layoutX="300.0" layoutY="77.0" spacing="14.0">
+         <children>
+            <Label fx:id="addPartIdLabelChanger" />
+            <TextField fx:id="addPartNameTextBox" promptText="Part Name">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addPartInvTextBox" promptText="Inv">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addPartPriceCostTextBox" promptText="Price/Cost">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addPartMinTextBox" promptText="Min">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addPartMaxTextBox" promptText="Max">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addPartChangingTextBox" promptText="Machine ID">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <Label fx:id="AddPartLabel" layoutX="14.0" layoutY="14.0" text="Add Part">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="addPartInhouseRadioButton" layoutX="201.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleInhouseRadioButton" text="In-House" />
+      <RadioButton fx:id="addPartOutsourcedRadioButton" layoutX="307.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleOutsourcedRadioButton" text="Outsourced" />
+      <HBox fx:id="addPartButtonHbox" alignment="CENTER" layoutX="349.0" layoutY="348.0" spacing="10.0">
+         <children>
+            <Button fx:id="addPartSaveButton" mnemonicParsing="false" onAction="#handleSaveButton" text="Save" />
+            <Button fx:id="addPartCancelButton" mnemonicParsing="false" onAction="#handleCancelButton" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
